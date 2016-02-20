@@ -235,6 +235,9 @@ class ConnectViewController:UIViewController,UIScrollViewDelegate{
     
     func skipViewController(){
         print("skipViewController")
+        let cartViewController = CartViewController()
+        let nc = UINavigationController(rootViewController: cartViewController)
+        self.presentViewController(nc, animated: true, completion: nil)
     }
     
 }

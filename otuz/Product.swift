@@ -11,6 +11,7 @@ import SwiftyJSON
 
 class Product{
     
+    var id:String?
     var name:String?
     var photoUrl:String?
     var barcodeNumber:String?
@@ -18,10 +19,13 @@ class Product{
     var quantity:Int?
     
     init(j: JSON){
+        self.id = j["_id"].string
         self.name = j["name"].string
         self.photoUrl = j["photoUrl"].string
         self.barcodeNumber = j["barcodeNumber"].string
         self.price = j["price"].double
         self.quantity = j["quantity"].int
     }
+    
+
 }

@@ -36,8 +36,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate 
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         
-        self.window?.rootViewController = ConnectViewController()
-        self.window?.makeKeyAndVisible()
+        UINavigationBar.appearance().barTintColor = UIColor.otuzGreen()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().translucent = false
+        
+        if Plist.sharedInstance.facebookUserId == "" {
+            self.window?.rootViewController = UINavigationController(rootViewController: CartViewController())
+            self.window?.makeKeyAndVisible()
+        }else{
+            self.window?.rootViewController = UINavigationController(rootViewController: CartViewController())
+            self.window?.makeKeyAndVisible()
+        }
         
         return true
     }

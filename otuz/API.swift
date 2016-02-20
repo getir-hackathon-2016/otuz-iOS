@@ -19,7 +19,7 @@ class API {
         let endpointString = API.rootUrl + functionName;
         
         var allParams = params as! [String:AnyObject]
-        allParams["facebookUserId"] = Plist.sharedInstance.facebookUserId
+        //allParams["facebookUserId"] = Plist.sharedInstance.facebookUserId
         
         var encoding = ParameterEncoding.JSON
         var method = Method.POST
@@ -51,7 +51,6 @@ class API {
         
         if(response.result.isSuccess){
             let json = JSON(response.result.value!)
-            // print(json)
             
             if let error = json["error"].object as AnyObject? {
                 if(!error.isKindOfClass(NSNull)){

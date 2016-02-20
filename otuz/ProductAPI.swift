@@ -1,5 +1,5 @@
 //
-//  UserAPI.swift
+//  ProductAPI.swift
 //  otuz
 //
 //  Created by Emre Berk on 20/02/16.
@@ -9,35 +9,33 @@
 import Foundation
 import SwiftyJSON
 
-class UserAPI{
+class ProductAPI{
     
-    class func facebookConnect(facebookUser:FacebookUser,completion:(result:APICallResult,user:User?) -> Void){
+    class func getProduct(barcodeNumber:String,completion:(result:APICallResult,product:Product?) -> Void){
         
-        let funcName = "users"
+        let funcName = "products/\(barcodeNumber)"
         
         let params = NSMutableDictionary()
-        params["name"] = facebookUser.name
-        params["facebookUserId"] = facebookUser.id
         
-        API.call("POST", functionName: funcName, params: params) {
+        API.call("GET", functionName: funcName, params: params) {
             (result) -> Void in
             
-            var user:User? = nil
+            var product:Product? = nil
             
             if result.error == nil {
                 if let data = result.data{
-                    print(data)
                     if let dataObj = data.object as AnyObject?{
                         if !dataObj.isKindOfClass(NSNull){
-                            user = User(j: JSON(dataObj))
+                            product = Product(j: JSON(dataObj))
                         }
                     }
                 }
             }
             
-            completion(result: result, user: user)
+            completion(result: result, product: product)
             
         }
         
     }
+    
 }
