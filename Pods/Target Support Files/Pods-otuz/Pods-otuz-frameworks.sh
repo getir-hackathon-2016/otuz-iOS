@@ -86,6 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-otuz/AFNetworking.framework"
   install_framework "Pods-otuz/Alamofire.framework"
+  install_framework "Pods-otuz/Bolts.framework"
+  install_framework "Pods-otuz/FBSDKCoreKit.framework"
+  install_framework "Pods-otuz/FBSDKLoginKit.framework"
+  install_framework "Pods-otuz/FBSDKShareKit.framework"
   install_framework "Pods-otuz/MTBBarcodeScanner.framework"
   install_framework "Pods-otuz/SnapKit.framework"
   install_framework "Pods-otuz/SwiftyJSON.framework"
@@ -93,6 +97,10 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-otuz/AFNetworking.framework"
   install_framework "Pods-otuz/Alamofire.framework"
+  install_framework "Pods-otuz/Bolts.framework"
+  install_framework "Pods-otuz/FBSDKCoreKit.framework"
+  install_framework "Pods-otuz/FBSDKLoginKit.framework"
+  install_framework "Pods-otuz/FBSDKShareKit.framework"
   install_framework "Pods-otuz/MTBBarcodeScanner.framework"
   install_framework "Pods-otuz/SnapKit.framework"
   install_framework "Pods-otuz/SwiftyJSON.framework"

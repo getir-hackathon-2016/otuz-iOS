@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '04A97D42E5474C483EA22EE5'
+               BlueprintIdentifier = '5B274772996DC5F5FEAF3FD9'
                BlueprintName = 'Pods-otuz'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_otuz.framework'>

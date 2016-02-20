@@ -21,6 +21,15 @@ class Plist{
         }
     }
     
+    var facebookUserId:String {
+        set(value){
+            self.set("facebookUserId", value: value)
+        }
+        get{
+            return self.get("facebookUserId")
+        }
+    }
+    
     func get(key:NSString) -> String {
         var myDict: NSDictionary?
         

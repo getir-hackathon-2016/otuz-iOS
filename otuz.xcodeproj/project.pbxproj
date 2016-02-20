@@ -25,6 +25,21 @@
 		C30E7F001C77EBFA002A5588 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C30E7EFF1C77EBFA002A5588 /* Lato-Regular.ttf */; };
 		C30E7F021C77EC04002A5588 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C30E7F011C77EC04002A5588 /* Lato-Bold.ttf */; };
 		C30E7F041C77EC1D002A5588 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C30E7F031C77EC1D002A5588 /* Lato-Light.ttf */; };
+		C30E7F061C78033D002A5588 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F051C78033D002A5588 /* WalkthroughView.swift */; };
+		C30E7F081C7814A5002A5588 /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F071C7814A5002A5588 /* NotificationNames.swift */; };
+		C30E7F0B1C7819D0002A5588 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F0A1C7819D0002A5588 /* Banner.swift */; };
+		C30E7F0D1C7819F6002A5588 /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F0C1C7819F6002A5588 /* ErrorBanner.swift */; };
+		C30E7F0F1C781B5C002A5588 /* NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F0E1C781B5C002A5588 /* NSLayoutConstraintExtension.swift */; };
+		C30E7F121C781BF0002A5588 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F111C781BF0002A5588 /* APIError.swift */; };
+		C30E7F141C7821A4002A5588 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F131C7821A4002A5588 /* API.swift */; };
+		C30E7F161C7821D7002A5588 /* APICallResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F151C7821D7002A5588 /* APICallResult.swift */; };
+		C30E7F181C782BC5002A5588 /* FacebookConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F171C782BC5002A5588 /* FacebookConnect.swift */; };
+		C30E7F1B1C783135002A5588 /* FacebookUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F1A1C783135002A5588 /* FacebookUser.swift */; };
+		C30E7F1D1C7832DE002A5588 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F1C1C7832DE002A5588 /* ActivityIndicator.swift */; };
+		C30E7F1F1C783329002A5588 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F1E1C783329002A5588 /* UserAPI.swift */; };
+		C30E7F211C7833D9002A5588 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F201C7833D9002A5588 /* User.swift */; };
+		C30E7F231C78359F002A5588 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F221C78359F002A5588 /* Address.swift */; };
+		C30E7F251C7835B4002A5588 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7F241C7835B4002A5588 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +85,21 @@
 		C30E7EFF1C77EBFA002A5588 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		C30E7F011C77EC04002A5588 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		C30E7F031C77EC1D002A5588 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		C30E7F051C78033D002A5588 /* WalkthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
+		C30E7F071C7814A5002A5588 /* NotificationNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		C30E7F0A1C7819D0002A5588 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		C30E7F0C1C7819F6002A5588 /* ErrorBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
+		C30E7F0E1C781B5C002A5588 /* NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtension.swift; sourceTree = "<group>"; };
+		C30E7F111C781BF0002A5588 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C30E7F131C7821A4002A5588 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C30E7F151C7821D7002A5588 /* APICallResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICallResult.swift; sourceTree = "<group>"; };
+		C30E7F171C782BC5002A5588 /* FacebookConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookConnect.swift; sourceTree = "<group>"; };
+		C30E7F1A1C783135002A5588 /* FacebookUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookUser.swift; sourceTree = "<group>"; };
+		C30E7F1C1C7832DE002A5588 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		C30E7F1E1C783329002A5588 /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		C30E7F201C7833D9002A5588 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C30E7F221C78359F002A5588 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		C30E7F241C7835B4002A5588 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D183D3F4F4CC59E5D3AE3CFD /* Pods-otuz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otuz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-otuz/Pods-otuz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,9 +165,13 @@
 			children = (
 				C30E7EF61C77DEC9002A5588 /* Utility */,
 				C30E7EF11C77DC5A002A5588 /* Extension */,
+				C30E7F091C7819C0002A5588 /* Library */,
+				C30E7F191C783125002A5588 /* Model */,
+				C30E7F101C781BE3002A5588 /* API */,
 				C30E7EBE1C77C1B7002A5588 /* AppDelegate.swift */,
 				C30E7EC01C77C1B7002A5588 /* ViewController.swift */,
 				C30E7EFD1C77E8FE002A5588 /* ConnectViewController.swift */,
+				C30E7F051C78033D002A5588 /* WalkthroughView.swift */,
 				C30E7EC21C77C1B7002A5588 /* Main.storyboard */,
 				C30E7EC51C77C1B7002A5588 /* Assets.xcassets */,
 				C30E7EC71C77C1B7002A5588 /* LaunchScreen.storyboard */,
@@ -183,6 +217,7 @@
 				C30E7EFB1C77E49C002A5588 /* UIFontExtension.swift */,
 				C30E7EF21C77DDDC002A5588 /* StringExtension.swift */,
 				C30E7EF41C77DE2E002A5588 /* UIViewExtension.swift */,
+				C30E7F0E1C781B5C002A5588 /* NSLayoutConstraintExtension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -191,8 +226,42 @@
 			isa = PBXGroup;
 			children = (
 				C30E7EF71C77DEDA002A5588 /* Plist.swift */,
+				C30E7F071C7814A5002A5588 /* NotificationNames.swift */,
+				C30E7F0C1C7819F6002A5588 /* ErrorBanner.swift */,
+				C30E7F171C782BC5002A5588 /* FacebookConnect.swift */,
+				C30E7F1C1C7832DE002A5588 /* ActivityIndicator.swift */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		C30E7F091C7819C0002A5588 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C30E7F0A1C7819D0002A5588 /* Banner.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C30E7F101C781BE3002A5588 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C30E7F131C7821A4002A5588 /* API.swift */,
+				C30E7F111C781BF0002A5588 /* APIError.swift */,
+				C30E7F151C7821D7002A5588 /* APICallResult.swift */,
+				C30E7F1E1C783329002A5588 /* UserAPI.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		C30E7F191C783125002A5588 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C30E7F1A1C783135002A5588 /* FacebookUser.swift */,
+				C30E7F201C7833D9002A5588 /* User.swift */,
+				C30E7F241C7835B4002A5588 /* Product.swift */,
+				C30E7F221C78359F002A5588 /* Address.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		D6BCE7CEEF5023E20AD98E77 /* Frameworks */ = {
@@ -391,12 +460,27 @@
 			files = (
 				C30E7EF81C77DEDA002A5588 /* Plist.swift in Sources */,
 				C30E7EF51C77DE2E002A5588 /* UIViewExtension.swift in Sources */,
+				C30E7F1D1C7832DE002A5588 /* ActivityIndicator.swift in Sources */,
+				C30E7F181C782BC5002A5588 /* FacebookConnect.swift in Sources */,
 				C30E7EF31C77DDDC002A5588 /* StringExtension.swift in Sources */,
+				C30E7F161C7821D7002A5588 /* APICallResult.swift in Sources */,
 				C30E7EFC1C77E49C002A5588 /* UIFontExtension.swift in Sources */,
+				C30E7F1B1C783135002A5588 /* FacebookUser.swift in Sources */,
+				C30E7F141C7821A4002A5588 /* API.swift in Sources */,
+				C30E7F0D1C7819F6002A5588 /* ErrorBanner.swift in Sources */,
+				C30E7F0B1C7819D0002A5588 /* Banner.swift in Sources */,
+				C30E7F0F1C781B5C002A5588 /* NSLayoutConstraintExtension.swift in Sources */,
+				C30E7F251C7835B4002A5588 /* Product.swift in Sources */,
 				C30E7EC11C77C1B7002A5588 /* ViewController.swift in Sources */,
+				C30E7F1F1C783329002A5588 /* UserAPI.swift in Sources */,
+				C30E7F061C78033D002A5588 /* WalkthroughView.swift in Sources */,
 				C30E7EF01C77DC51002A5588 /* UIColorExtension.swift in Sources */,
+				C30E7F081C7814A5002A5588 /* NotificationNames.swift in Sources */,
 				C30E7EBF1C77C1B7002A5588 /* AppDelegate.swift in Sources */,
 				C30E7EFE1C77E8FE002A5588 /* ConnectViewController.swift in Sources */,
+				C30E7F121C781BF0002A5588 /* APIError.swift in Sources */,
+				C30E7F231C78359F002A5588 /* Address.swift in Sources */,
+				C30E7F211C7833D9002A5588 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

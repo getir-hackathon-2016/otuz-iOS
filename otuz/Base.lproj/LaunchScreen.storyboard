@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1000" translatesAutoresizingMaskIntoConstraints="NO" id="qv4-Bd-jdS">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="qv4-Bd-jdS">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="L07-SI-Zgl"/>
-                                    <constraint firstAttribute="width" constant="300" id="aki-vs-muo"/>
+                                    <constraint firstAttribute="height" constant="100" id="L07-SI-Zgl"/>
+                                    <constraint firstAttribute="width" constant="100" id="aki-vs-muo"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo1000" width="500" height="500"/>
+        <image name="logo" width="100" height="100"/>
     </resources>
 </document>

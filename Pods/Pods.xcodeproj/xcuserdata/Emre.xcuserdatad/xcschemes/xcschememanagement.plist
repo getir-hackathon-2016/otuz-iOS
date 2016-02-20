@@ -14,6 +14,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MTBBarcodeScanner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3AAC21CFC981C2050BB5EF78E1292926</key>
+		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E868955E7E5FE8AF9D624645F0FBE7C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>76E8554096DEBF0EA8D7235913623BEE</key>
+		<key>63A18C6A528BD7E47DDAF39B2AEAF1D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,6 +78,31 @@
 			<true/>
 		</dict>
 		<key>7B316FBECF845695A5C8D0669F8373E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>80053AB8C5FF166A33A475E5E927DCDB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82AA7FA27C8BA84A82EBA7DC4D6FDDEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B580EF579AC0F1A6B64E833EEE8361E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8470470292BC39EE263E6103508E41A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5ACF367AE3BD7A7F2AF2D430901DF7B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
