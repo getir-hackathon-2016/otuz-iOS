@@ -32,3 +32,6 @@ LANDMARK = "Landmark";
 SAVE = "Save";
 FILL_ALL_FIELD_ERROR = "Please fill all fields";
 GENERAL_ERROR = "An error occurred, please check your internet connection";
+db_failed = "An error occurred";
+not_found = "An error occurred";
+no_products = "There are no product";

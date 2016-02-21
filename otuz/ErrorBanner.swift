@@ -17,7 +17,7 @@ class ErrorBanner: NSObject {
         if let msg = error.message {
             
             ErrorBanner.dismissActiveBanner()
-            let banner = Banner(title: msg)
+            let banner = Banner(title: msg.localized)
             activeBanner = banner
             banner.show(duration:3)
         }
