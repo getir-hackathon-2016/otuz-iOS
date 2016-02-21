@@ -47,10 +47,10 @@ class ProductPopUpView:UIView {
         initNameLabel()
         initConstraints()
         self.cancelButton.titleLabel?.font = UIFont(latoBoldWithSize: 15)
-        self.cancelButton.setTitle("CANCEL", forState: UIControlState.Normal)
+        self.cancelButton.setTitle("İptal", forState: UIControlState.Normal)
         self.cancelButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         self.confirmButton.titleLabel?.font = UIFont(latoBoldWithSize: 15)
-        self.confirmButton.setTitle("CONFIRM", forState: UIControlState.Normal)
+        self.confirmButton.setTitle("Sepete Ekle", forState: UIControlState.Normal)
         self.confirmButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         blurView.snp_makeConstraints { (make) -> Void in
             make.size.equalTo(self)

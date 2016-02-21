@@ -11,6 +11,9 @@
             <string>Lato-Bold</string>
             <string>Lato-Bold</string>
         </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -32,20 +35,23 @@
                                     <constraint firstAttribute="height" constant="60" id="ahy-j2-5lx"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRk-jO-Gfx">
-                                <rect key="frame" x="78" y="0.0" width="402" height="100"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRk-jO-Gfx">
+                                <rect key="frame" x="78" y="20" width="402" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ilj-YI-7fp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="textColor" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FU4-Tz-9JA">
-                                <rect key="frame" x="530" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="530" y="0.0" width="50" height="49"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="3ZF-5N-4t2"/>
                                     <constraint firstAttribute="width" constant="45" id="Gg9-og-a2d"/>
                                     <constraint firstAttribute="width" constant="50" id="InY-5E-dE8"/>
-                                    <constraint firstAttribute="height" constant="50" id="Kjr-9f-hW7"/>
+                                    <constraint firstAttribute="height" constant="49" id="Kjr-9f-hW7"/>
                                     <constraint firstAttribute="height" constant="45" id="giC-Rx-IHA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
@@ -54,14 +60,14 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Gg9-og-a2d"/>
                                         <exclude reference="3ZF-5N-4t2"/>
+                                        <exclude reference="Gg9-og-a2d"/>
                                         <exclude reference="giC-Rx-IHA"/>
                                     </mask>
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-Tb-HSW">
-                                <rect key="frame" x="530" y="50" width="50" height="50"/>
+                                <rect key="frame" x="530" y="51" width="50" height="49"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                                 <state key="normal" title="-">
@@ -77,25 +83,64 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx7-pH-vOt" userLabel="Seperator">
+                                <rect key="frame" x="530" y="49" width="50" height="2"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="wXU-zw-2fi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuQ-sr-nFT">
+                                <rect key="frame" x="78" y="50" width="394" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LWN-MC-R6D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="bRk-jO-Gfx" firstAttribute="leading" secondItem="2CV-to-wJo" secondAttribute="trailing" constant="8" id="0cD-3I-wsC"/>
+                            <constraint firstItem="Lx7-pH-vOt" firstAttribute="width" secondItem="FU4-Tz-9JA" secondAttribute="width" id="AaP-xv-4Fe"/>
                             <constraint firstAttribute="trailing" secondItem="1QZ-Tb-HSW" secondAttribute="trailing" id="B5T-q3-rzI"/>
                             <constraint firstItem="bRk-jO-Gfx" firstAttribute="leading" secondItem="2CV-to-wJo" secondAttribute="trailing" constant="8" id="Be9-2U-LoF"/>
+                            <constraint firstItem="Lx7-pH-vOt" firstAttribute="centerY" secondItem="ICB-ey-JcJ" secondAttribute="centerY" id="Ewg-fc-yvx"/>
                             <constraint firstItem="1QZ-Tb-HSW" firstAttribute="top" secondItem="FU4-Tz-9JA" secondAttribute="bottom" id="F3L-nH-bzt"/>
                             <constraint firstItem="1QZ-Tb-HSW" firstAttribute="leading" secondItem="eUF-fK-36f" secondAttribute="trailing" id="FBt-ea-6qe"/>
                             <constraint firstAttribute="bottom" secondItem="bRk-jO-Gfx" secondAttribute="bottom" id="Fbd-qA-zfw"/>
+                            <constraint firstItem="1QZ-Tb-HSW" firstAttribute="top" secondItem="Lx7-pH-vOt" secondAttribute="bottom" id="KxF-lk-cFj"/>
+                            <constraint firstItem="bRk-jO-Gfx" firstAttribute="top" secondItem="2CV-to-wJo" secondAttribute="top" constant="10" id="N44-8f-0kF"/>
+                            <constraint firstItem="bRk-jO-Gfx" firstAttribute="top" secondItem="ICB-ey-JcJ" secondAttribute="top" constant="20" id="XJQ-0f-KF5"/>
                             <constraint firstItem="eUF-fK-36f" firstAttribute="top" secondItem="ICB-ey-JcJ" secondAttribute="top" id="Zz5-B9-oHe"/>
+                            <constraint firstItem="Lx7-pH-vOt" firstAttribute="top" secondItem="FU4-Tz-9JA" secondAttribute="bottom" id="fVu-Oq-lF6"/>
                             <constraint firstItem="FU4-Tz-9JA" firstAttribute="top" secondItem="ICB-ey-JcJ" secondAttribute="top" id="fst-zF-wcC"/>
+                            <constraint firstItem="PuQ-sr-nFT" firstAttribute="top" secondItem="bRk-jO-Gfx" secondAttribute="bottom" id="gbS-Sr-fSe"/>
                             <constraint firstItem="bRk-jO-Gfx" firstAttribute="top" secondItem="ICB-ey-JcJ" secondAttribute="top" id="hAV-3d-lwJ"/>
                             <constraint firstItem="1QZ-Tb-HSW" firstAttribute="leading" secondItem="FU4-Tz-9JA" secondAttribute="leading" id="hNg-bL-AZT"/>
                             <constraint firstItem="2CV-to-wJo" firstAttribute="centerY" secondItem="ICB-ey-JcJ" secondAttribute="centerY" id="jaN-qA-wdx"/>
                             <constraint firstItem="eUF-fK-36f" firstAttribute="leading" secondItem="bRk-jO-Gfx" secondAttribute="trailing" id="lzh-er-EDY"/>
                             <constraint firstAttribute="trailing" secondItem="FU4-Tz-9JA" secondAttribute="trailing" id="mdA-Bs-Yoj"/>
+                            <constraint firstItem="PuQ-sr-nFT" firstAttribute="leading" secondItem="2CV-to-wJo" secondAttribute="trailing" constant="8" id="mql-G7-gfd"/>
                             <constraint firstAttribute="bottom" secondItem="eUF-fK-36f" secondAttribute="bottom" id="pgV-0Y-X77"/>
                             <constraint firstItem="2CV-to-wJo" firstAttribute="leading" secondItem="ICB-ey-JcJ" secondAttribute="leading" constant="10" id="s2W-Al-t1T"/>
+                            <constraint firstAttribute="trailing" secondItem="Lx7-pH-vOt" secondAttribute="trailing" id="waT-EO-uoM"/>
+                            <constraint firstItem="eUF-fK-36f" firstAttribute="leading" secondItem="PuQ-sr-nFT" secondAttribute="trailing" constant="8" id="xAN-8H-n0F"/>
                             <constraint firstAttribute="bottom" secondItem="1QZ-Tb-HSW" secondAttribute="bottom" id="yn2-vP-9f1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Be9-2U-LoF"/>
+                                <exclude reference="Fbd-qA-zfw"/>
+                                <exclude reference="N44-8f-0kF"/>
+                                <exclude reference="hAV-3d-lwJ"/>
+                                <exclude reference="F3L-nH-bzt"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <constraints>
@@ -111,6 +156,7 @@
                 <outlet property="minusButton" destination="1QZ-Tb-HSW" id="AHt-st-0XH"/>
                 <outlet property="nameLabel" destination="bRk-jO-Gfx" id="l5T-Mn-GAJ"/>
                 <outlet property="plusButton" destination="FU4-Tz-9JA" id="yfy-gc-V04"/>
+                <outlet property="priceLabel" destination="PuQ-sr-nFT" id="k5k-dv-eSw"/>
                 <outlet property="productImageView" destination="2CV-to-wJo" id="Gku-C3-ekS"/>
             </connections>
         </tableViewCell>

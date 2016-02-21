@@ -14,7 +14,6 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
     }
     
     func getData(){
@@ -55,7 +54,19 @@ class SplashViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        self.view.backgroundColor = UIColor(hexString: "ededed")
+        print("loadView")
+        self.view.backgroundColor = UIColor.otuzGreen()
+        initLogoImageView()
+    }
+    
+    func initLogoImageView(){
+        let logoImageView = UIImageView(image: UIImage(named: "logo"))
+        self.view.addSubview(logoImageView)
+        
+        logoImageView.snp_makeConstraints { (make) -> Void in
+            make.center.equalTo(self.view)
+            make.width.height.equalTo(100)
+        }
     }
     
 

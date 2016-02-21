@@ -21,20 +21,14 @@ class BarcodeScannerViewController:UIViewController {
     var barcodeView:UIView!
     var scanningLabel:UILabel!
     var dismissButton:UIButton!
-    
-    var labelState = false
-    
-    var timer:NSTimer?
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.scanningLabel.text = "Scanning"
-        self.dismissButton.setTitle("Dismiss", forState: UIControlState.Normal)
+        self.scanningLabel.text = "Taranıyor"
+        self.dismissButton.setTitle("İptal", forState: UIControlState.Normal)
         self.dismissButton.addTarget(self, action: "dismiss", forControlEvents: UIControlEvents.TouchUpInside)
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateScanningLabel", userInfo: nil, repeats: true)
     }
     
     override func loadView() {
@@ -62,6 +56,7 @@ class BarcodeScannerViewController:UIViewController {
         
         if self.scanner == nil {
             initScanner()
+            initScanAnimation()
         }
         
     }
@@ -86,7 +81,7 @@ class BarcodeScannerViewController:UIViewController {
         self.scanningLabel.textAlignment = .Center
         
         self.scanningLabel.snp_makeConstraints { (make) -> Void in
-            make.bottom.equalTo(self.topLayoutGuide).offset(40)
+            make.bottom.equalTo(self.topLayoutGuide).offset(60)
             make.width.equalTo(self.view)
             make.height.equalTo(25)
         }
@@ -119,6 +114,32 @@ class BarcodeScannerViewController:UIViewController {
             }
         }
     }
+    
+    func initScanAnimation(){
+        let label = UILabel()
+        label.backgroundColor = UIColor.redColor()
+        self.view.addSubview(label)
+        label.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(self.barcodeView)
+            make.top.equalTo(self.barcodeView).offset(-5)
+            make.bottom.equalTo(self.barcodeView).offset(5)
+            make.width.equalTo(2)
+        }
+        
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(0.6, delay: 0, options: [.Autoreverse,.Repeat], animations: { () -> Void in
+            
+            label.snp_remakeConstraints { (make) -> Void in
+                make.left.equalTo(self.barcodeView.snp_right)
+                make.top.equalTo(self.barcodeView).offset(-5)
+                make.bottom.equalTo(self.barcodeView).offset(5)
+                make.width.equalTo(2)
+            }
+            
+            self.view.layoutIfNeeded()
+            }, completion: nil)
+        
+    }
 
     func startScanning(){
         self.scanner!.startScanningWithResultBlock { (codes) -> Void in
@@ -138,18 +159,6 @@ class BarcodeScannerViewController:UIViewController {
     
     func dismiss(){
         self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    func updateScanningLabel(){
-        self.view.layoutIfNeeded()
-        UIView.animateWithDuration(0.5) { () -> Void in
-            self.scanningLabel.snp_updateConstraints(closure: { (make) -> Void in
-                make.bottom.equalTo(self.topLayoutGuide).offset(self.labelState ? 40 : 90)
-                self.labelState = !self.labelState
-            })
-            
-            self.view.layoutIfNeeded()
-        }
     }
     
 }

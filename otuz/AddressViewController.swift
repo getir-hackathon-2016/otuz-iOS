@@ -26,8 +26,9 @@ class AddressViewController:UIViewController,MKMapViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationItem.title = "Adres"
+        self.navigationItem.title = "Adres"
         self.navigationController?.navigationBar.titleTextAttributes = NavigationHelper.titleAttributes()
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "close"), style: .Plain, target: self, action: "dismiss")
         
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
@@ -90,7 +91,8 @@ class AddressViewController:UIViewController,MKMapViewDelegate{
         self.addressLabel = LabelInset()
         self.addressLabel.numberOfLines = 0
         self.addressLabel.font = UIFont(latoRegularWithSize: 14)
-        self.addressLabel.backgroundColor = UIColor.whiteColor()
+        self.addressLabel.backgroundColor = UIColor.otuzGreen()
+        self.addressLabel.textColor = UIColor.whiteColor()
         self.addressLabel.textAlignment = .Center
         self.addressLabel.userInteractionEnabled = true
         self.addressLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "addressLabelClicked"))
@@ -143,17 +145,22 @@ class AddressViewController:UIViewController,MKMapViewDelegate{
         
     }
     
+    func dismiss(){
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func fillAddressData(){
         if let addressView = self.addressFormView{
             if let user = User.currentUser{
+                
                 if let address = user.address{
                     addressView.doorNumberTextField.text = address.doorNumber
                     addressView.buildingNumberTextField.text = address.buildingNumber
                     addressView.landmarkTextField.text = address.landmark
-                    addressView.addressTextField.text = address.address
-                }else{
-                    addressView.addressTextField.text = addressLabel.text
                 }
+                
+                    addressView.addressTextField.text = addressLabel.text
+                
             }
         }
     }
@@ -163,9 +170,9 @@ class AddressViewController:UIViewController,MKMapViewDelegate{
             let doorNo = addressView.doorNumberTextField.text
             let buildingNo = addressView.buildingNumberTextField.text
             let landmark = addressView.landmarkTextField.text
-            let address = addressView.addressTextField.text
+            let addressText = addressView.addressTextField.text
             
-            if doorNo == "" || buildingNo == "" || landmark == "" || address == "" {
+            if doorNo == "" || buildingNo == "" || landmark == "" || addressText == "" {
                 ErrorBanner.standartBanner().show()
                 return;
             }else{
@@ -173,7 +180,7 @@ class AddressViewController:UIViewController,MKMapViewDelegate{
                 address.buildingNumber = buildingNo
                 address.doorNumber = doorNo
                 address.landmark = landmark
-                address.address = landmark
+                address.address = addressText
                 address.latitude = self.mapView.centerCoordinate.latitude
                 address.longitude = self.mapView.centerCoordinate.longitude
                 updateAddress(address)
@@ -182,6 +189,7 @@ class AddressViewController:UIViewController,MKMapViewDelegate{
     }
     
     func updateAddress(address:Address){
+        otuzLoading.show()
         UserAPI.updateAddress(address, facebookId: Plist.sharedInstance.facebookUserId) {
             (result, user) -> Void in
             
@@ -191,21 +199,35 @@ class AddressViewController:UIViewController,MKMapViewDelegate{
             }else{
                 ErrorBanner.handleError(result.error!)
             }
+            otuzLoading.hide()
             
         }
     }
     
     func centerToUserLocation(){
         
-        if let lat = Plist.sharedInstance.latitude{
-            userCoor.latitude = lat
-        }
+        if let user = User.currentUser{
+            if let address = user.address{
+                if let lat = address.latitude{
+                    userCoor.latitude = lat
+                }
+                
+                if let lon = address.longitude{
+                    userCoor.longitude = lon
+                }
+            }
+        }else{
+            
+            if let lat = Plist.sharedInstance.latitude{
+                userCoor.latitude = lat
+            }
+            
+            if let lon = Plist.sharedInstance.longitude{
+                userCoor.longitude = lon
+            }
         
-        if let lon = Plist.sharedInstance.longitude{
-            userCoor.longitude = lon
-        }
         
-        print(userCoor)
+        }
         
         self.mapView.setCenterCoordinate(userCoor, animated: true)
         

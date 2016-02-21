@@ -61,7 +61,7 @@ class ConnectViewController:UIViewController,UIScrollViewDelegate{
         self.view.addSubview(facebookButton)
         self.facebookButton.backgroundColor = UIColor.whiteColor()
         self.facebookButton.titleLabel?.font = UIFont(latoBoldWithSize: 16)
-        self.facebookButton.setTitle("Connect with Facebook", forState: UIControlState.Normal)
+        self.facebookButton.setTitle("Facebook ile bağlan", forState: UIControlState.Normal)
         self.facebookButton.setTitleColor(UIColor(hexString: "3b5998"), forState: UIControlState.Normal)
         
         if let facebookImage = UIImage(named: "facebook"){
@@ -219,8 +219,7 @@ class ConnectViewController:UIViewController,UIScrollViewDelegate{
     }
     
     func facebookConnectCall(user:FacebookUser){
-        let actInd = ActivityIndicator.start(self.view)
-        
+        otuzLoading.show()
         UserAPI.facebookConnect(user, completion: {
             (result,user) -> Void in
             if result.error == nil{
@@ -229,7 +228,8 @@ class ConnectViewController:UIViewController,UIScrollViewDelegate{
             }else{
                 ErrorBanner.handleError(result.error!)
             }
-            ActivityIndicator.stop(actInd)
+            otuzLoading.hide()
+
         })
     }
     

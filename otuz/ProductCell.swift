@@ -18,5 +18,6 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
     @IBOutlet weak var countLabel: UILabel!
-    
+    @IBOutlet weak var priceLabel: UILabel!
+
 }
