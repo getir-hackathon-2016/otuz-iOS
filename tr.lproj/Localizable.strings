@@ -36,3 +36,4 @@ GENERAL_ERROR = "Bir hata oluştu lütfen internet bağlantınızı kontrol edin
 db_failed = "Bir hata oluştu";
 not_found = "Bir hata oluştu";
 no_products = "Ürün bulunamadı";
+no_delivery = "Bir hata oluştu";

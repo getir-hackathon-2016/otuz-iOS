@@ -215,18 +215,15 @@ class AddressViewController:UIViewController,MKMapViewDelegate{
                 if let lon = address.longitude{
                     userCoor.longitude = lon
                 }
+            }else{
+                if let lat = Plist.sharedInstance.latitude{
+                    userCoor.latitude = lat
+                }
+                
+                if let lon = Plist.sharedInstance.longitude{
+                    userCoor.longitude = lon
+                }
             }
-        }else{
-            
-            if let lat = Plist.sharedInstance.latitude{
-                userCoor.latitude = lat
-            }
-            
-            if let lon = Plist.sharedInstance.longitude{
-                userCoor.longitude = lon
-            }
-        
-        
         }
         
         self.mapView.setCenterCoordinate(userCoor, animated: true)

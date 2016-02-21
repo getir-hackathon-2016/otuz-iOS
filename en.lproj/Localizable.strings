@@ -35,3 +35,4 @@ GENERAL_ERROR = "An error occurred, please check your internet connection";
 db_failed = "An error occurred";
 not_found = "An error occurred";
 no_products = "There are no product";
+no_delivery = "An error occurred";
