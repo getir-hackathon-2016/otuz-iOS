@@ -25,6 +25,7 @@ class User: NSObject{
         }
     }
     
+    var id:String!
     var facebookUserId:String!
     var name:String!
     var address:Address?
@@ -32,10 +33,14 @@ class User: NSObject{
     var products:[Product] = []
     
     init(j: JSON){
+        print(j)
+        if let userIdInt = j["facebookUserId"].int{
+            self.facebookUserId = "\(userIdInt)"
+        }
         
-        self.facebookUserId = j["facebookUserId"].string
         self.name = j["name"].string
-        
+        self.id = j["_id"].string
+
         self.products = []
         if let productArray = j["products"].array{
             for(var i=0; i<productArray.count; i++){

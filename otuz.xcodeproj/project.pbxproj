@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B710171818C6CE110CC0F6A9 /* Pods_otuz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C362921B9221B342B71CF2 /* Pods_otuz.framework */; };
 		C30E7EBF1C77C1B7002A5588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7EBE1C77C1B7002A5588 /* AppDelegate.swift */; };
-		C30E7EC11C77C1B7002A5588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7EC01C77C1B7002A5588 /* ViewController.swift */; };
+		C30E7EC11C77C1B7002A5588 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E7EC01C77C1B7002A5588 /* SplashViewController.swift */; };
 		C30E7EC41C77C1B7002A5588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30E7EC21C77C1B7002A5588 /* Main.storyboard */; };
 		C30E7EC61C77C1B7002A5588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30E7EC51C77C1B7002A5588 /* Assets.xcassets */; };
 		C30E7EC91C77C1B7002A5588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30E7EC71C77C1B7002A5588 /* LaunchScreen.storyboard */; };
@@ -45,6 +45,13 @@
 		C383E1A91C7852400043C233 /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1A81C7852400043C233 /* ProductAPI.swift */; };
 		C383E1AB1C7853FA0043C233 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1AA1C7853FA0043C233 /* BarcodeScannerViewController.swift */; };
 		C383E1AD1C7870650043C233 /* ProductPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1AC1C7870650043C233 /* ProductPopUpView.swift */; };
+		C383E1B31C788FCD0043C233 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C383E1B21C788FCD0043C233 /* ProductCell.xib */; };
+		C383E1B51C78926C0043C233 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1B41C78926C0043C233 /* ProductCell.swift */; };
+		C383E1B71C78D8460043C233 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1B61C78D8460043C233 /* AddressViewController.swift */; };
+		C383E1B91C78DABA0043C233 /* LabelInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1B81C78DABA0043C233 /* LabelInset.swift */; };
+		C383E1BB1C78F0A90043C233 /* AddressFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1BA1C78F0A90043C233 /* AddressFormView.swift */; };
+		C383E1BD1C78F1C10043C233 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1BC1C78F1C10043C233 /* FormTextField.swift */; };
+		C383E1BF1C792DEE0043C233 /* otuzLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1BE1C792DEE0043C233 /* otuzLoading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +76,7 @@
 		88EC98ED09BC030881D41042 /* Pods-otuz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otuz.release.xcconfig"; path = "Pods/Target Support Files/Pods-otuz/Pods-otuz.release.xcconfig"; sourceTree = "<group>"; };
 		C30E7EBB1C77C1B7002A5588 /* otuz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otuz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30E7EBE1C77C1B7002A5588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C30E7EC01C77C1B7002A5588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C30E7EC01C77C1B7002A5588 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		C30E7EC31C77C1B7002A5588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C30E7EC51C77C1B7002A5588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30E7EC81C77C1B7002A5588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,6 +117,13 @@
 		C383E1A81C7852400043C233 /* ProductAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
 		C383E1AA1C7853FA0043C233 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		C383E1AC1C7870650043C233 /* ProductPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPopUpView.swift; sourceTree = "<group>"; };
+		C383E1B21C788FCD0043C233 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		C383E1B41C78926C0043C233 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		C383E1B61C78D8460043C233 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		C383E1B81C78DABA0043C233 /* LabelInset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelInset.swift; sourceTree = "<group>"; };
+		C383E1BA1C78F0A90043C233 /* AddressFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressFormView.swift; sourceTree = "<group>"; };
+		C383E1BC1C78F1C10043C233 /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		C383E1BE1C792DEE0043C233 /* otuzLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = otuzLoading.swift; sourceTree = "<group>"; };
 		D183D3F4F4CC59E5D3AE3CFD /* Pods-otuz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otuz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-otuz/Pods-otuz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,12 +194,11 @@
 				C30E7F191C783125002A5588 /* Model */,
 				C30E7F101C781BE3002A5588 /* API */,
 				C30E7EBE1C77C1B7002A5588 /* AppDelegate.swift */,
-				C30E7EC01C77C1B7002A5588 /* ViewController.swift */,
+				C30E7EC01C77C1B7002A5588 /* SplashViewController.swift */,
 				C30E7EFD1C77E8FE002A5588 /* ConnectViewController.swift */,
-				C30E7F051C78033D002A5588 /* WalkthroughView.swift */,
-				C383E1AC1C7870650043C233 /* ProductPopUpView.swift */,
 				C383E1A11C784E570043C233 /* CartViewController.swift */,
 				C383E1AA1C7853FA0043C233 /* BarcodeScannerViewController.swift */,
+				C383E1B61C78D8460043C233 /* AddressViewController.swift */,
 				C30E7EC21C77C1B7002A5588 /* Main.storyboard */,
 				C30E7EC51C77C1B7002A5588 /* Assets.xcassets */,
 				C30E7EC71C77C1B7002A5588 /* LaunchScreen.storyboard */,
@@ -244,6 +257,7 @@
 				C30E7F0C1C7819F6002A5588 /* ErrorBanner.swift */,
 				C30E7F171C782BC5002A5588 /* FacebookConnect.swift */,
 				C30E7F1C1C7832DE002A5588 /* ActivityIndicator.swift */,
+				C383E1BE1C792DEE0043C233 /* otuzLoading.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -282,7 +296,14 @@
 		C383E1A31C784F610043C233 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C30E7F051C78033D002A5588 /* WalkthroughView.swift */,
 				C383E1A61C7851600043C233 /* NavigationHelper.swift */,
+				C383E1B21C788FCD0043C233 /* ProductCell.xib */,
+				C383E1B41C78926C0043C233 /* ProductCell.swift */,
+				C383E1B81C78DABA0043C233 /* LabelInset.swift */,
+				C383E1BC1C78F1C10043C233 /* FormTextField.swift */,
+				C383E1AC1C7870650043C233 /* ProductPopUpView.swift */,
+				C383E1BA1C78F0A90043C233 /* AddressFormView.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -403,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30E7EC91C77C1B7002A5588 /* LaunchScreen.storyboard in Resources */,
+				C383E1B31C788FCD0043C233 /* ProductCell.xib in Resources */,
 				C30E7F021C77EC04002A5588 /* Lato-Bold.ttf in Resources */,
 				C30E7EFA1C77E187002A5588 /* Data.plist in Resources */,
 				C30E7F001C77EBFA002A5588 /* Lato-Regular.ttf in Resources */,
@@ -484,20 +506,26 @@
 				C30E7EF81C77DEDA002A5588 /* Plist.swift in Sources */,
 				C30E7EF51C77DE2E002A5588 /* UIViewExtension.swift in Sources */,
 				C30E7F1D1C7832DE002A5588 /* ActivityIndicator.swift in Sources */,
+				C383E1B71C78D8460043C233 /* AddressViewController.swift in Sources */,
 				C30E7F181C782BC5002A5588 /* FacebookConnect.swift in Sources */,
+				C383E1BB1C78F0A90043C233 /* AddressFormView.swift in Sources */,
+				C383E1BF1C792DEE0043C233 /* otuzLoading.swift in Sources */,
 				C383E1A21C784E570043C233 /* CartViewController.swift in Sources */,
 				C30E7EF31C77DDDC002A5588 /* StringExtension.swift in Sources */,
 				C30E7F161C7821D7002A5588 /* APICallResult.swift in Sources */,
 				C30E7EFC1C77E49C002A5588 /* UIFontExtension.swift in Sources */,
+				C383E1BD1C78F1C10043C233 /* FormTextField.swift in Sources */,
 				C30E7F1B1C783135002A5588 /* FacebookUser.swift in Sources */,
 				C30E7F141C7821A4002A5588 /* API.swift in Sources */,
+				C383E1B91C78DABA0043C233 /* LabelInset.swift in Sources */,
 				C30E7F0D1C7819F6002A5588 /* ErrorBanner.swift in Sources */,
 				C30E7F0B1C7819D0002A5588 /* Banner.swift in Sources */,
 				C30E7F0F1C781B5C002A5588 /* NSLayoutConstraintExtension.swift in Sources */,
 				C383E1AD1C7870650043C233 /* ProductPopUpView.swift in Sources */,
 				C30E7F251C7835B4002A5588 /* Product.swift in Sources */,
-				C30E7EC11C77C1B7002A5588 /* ViewController.swift in Sources */,
+				C30E7EC11C77C1B7002A5588 /* SplashViewController.swift in Sources */,
 				C30E7F1F1C783329002A5588 /* UserAPI.swift in Sources */,
+				C383E1B51C78926C0043C233 /* ProductCell.swift in Sources */,
 				C383E1A91C7852400043C233 /* ProductAPI.swift in Sources */,
 				C30E7F061C78033D002A5588 /* WalkthroughView.swift in Sources */,
 				C30E7EF01C77DC51002A5588 /* UIColorExtension.swift in Sources */,

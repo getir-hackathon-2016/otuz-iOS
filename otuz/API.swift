@@ -32,7 +32,7 @@ class API {
         }else if callType == "DELETE" {
             method = .DELETE
         }
-        
+                
         Alamofire.request(method, endpointString, parameters: allParams, encoding: encoding, headers: nil).responseJSON {
             response in
             

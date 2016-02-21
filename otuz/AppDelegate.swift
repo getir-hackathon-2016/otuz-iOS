@@ -26,27 +26,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        print("Plist.sharedInstance.hasWalktroughSeen \(Plist.sharedInstance.hasWalktroughSeen)")
-        Plist.sharedInstance.hasWalktroughSeen = true
-        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "notificationPermission", name: AskPermissionForPushNotification, object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "locationPermission", name: AskPermissionForPushNotification, object: nil)
                 
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        
         UINavigationBar.appearance().barTintColor = UIColor.otuzGreen()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().translucent = false
+
         
-        if Plist.sharedInstance.facebookUserId == "" {
-            self.window?.rootViewController = UINavigationController(rootViewController: CartViewController())
-            self.window?.makeKeyAndVisible()
-        }else{
-            self.window?.rootViewController = UINavigationController(rootViewController: CartViewController())
-            self.window?.makeKeyAndVisible()
+        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse{
+            self.initLocationManager()
         }
+        
+        self.window?.rootViewController = SplashViewController()
+        self.window?.makeKeyAndVisible()
         
         return true
     }
@@ -132,8 +128,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate 
             let locationObj = locationArray.lastObject as! CLLocation
             let coord = locationObj.coordinate
             
-//            Plist.sharedInstance.latitude = "\(coord.latitude)"
-//            Plist.sharedInstance.longitude = "\(coord.longitude)"
+            Plist.sharedInstance.latitude = coord.latitude
+            Plist.sharedInstance.longitude = coord.longitude
             print("latitude: \(coord.latitude), longitude: \(coord.longitude)")
         } else {
             locationManager.stopUpdatingLocation()

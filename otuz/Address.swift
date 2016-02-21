@@ -15,7 +15,12 @@ class Address:NSObject{
     var longitude:Double?
     var address:String?
     var buildingNumber:String?
+    var doorNumber:String?
     var landmark:String?
+    
+    override init(){
+    
+    }
     
     init(j: JSON){
         self.latitude = j["latitude"].double
@@ -23,5 +28,19 @@ class Address:NSObject{
         self.address = j["address"].string
         self.buildingNumber = j["buildingNumber"].string
         self.landmark = j["landmark"].string
+        self.doorNumber = j["doorNumber"].string
+    }
+    
+    func toDictionary() -> NSMutableDictionary{
+        
+        let d = NSMutableDictionary()
+        d["latitude"] = self.latitude
+        d["longitude"] = self.longitude
+        d["address"] = self.address
+        d["buildingNumber"] = self.buildingNumber
+        d["doorNumber"] = self.doorNumber
+        d["landmark"] = self.landmark
+        
+        return d
     }
 }

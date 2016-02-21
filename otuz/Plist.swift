@@ -12,21 +12,34 @@ class Plist{
     
     static let sharedInstance = Plist()
     
-    var hasWalktroughSeen:Bool {
-        set(value){
-            self.set("walktroughSeen",value: value ? "1" : "0")
-        }get{
-            let walktroughString = self.get("walktroughSeen")
-            return walktroughString == "1" ? true : false;
-        }
-    }
-    
     var facebookUserId:String {
         set(value){
             self.set("facebookUserId", value: value)
         }
         get{
             return self.get("facebookUserId")
+        }
+    }
+    
+    var latitude:Double? {
+        set(value){
+            if let lat = value{
+                self.set("latitude", value: "\(lat)")
+            }
+        }
+        get{
+            return Double(self.get("latitude"))
+        }
+    }
+    
+    var longitude:Double? {
+        set(value){
+            if let lon = value{
+                self.set("longitude", value: "\(lon)")
+            }
+        }
+        get{
+            return Double(self.get("longitude"))
         }
     }
     
