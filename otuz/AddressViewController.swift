@@ -26,7 +26,7 @@ class AddressViewController:UIViewController,MKMapViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Adres"
+        self.navigationItem.title = "ADDRESS".localized
         self.navigationController?.navigationBar.titleTextAttributes = NavigationHelper.titleAttributes()
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "close"), style: .Plain, target: self, action: "dismiss")
         

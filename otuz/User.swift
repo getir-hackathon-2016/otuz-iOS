@@ -34,7 +34,7 @@ class User: NSObject{
     
     init(j: JSON){
         print(j)
-        if let userIdInt = j["facebookUserId"].int{
+        if let userIdInt = j["facebookUserId"].uInt64{
             self.facebookUserId = "\(userIdInt)"
         }
         

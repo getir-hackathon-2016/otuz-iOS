@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  otuz
+
+  Created by Emre Berk on 21/02/16.
+  Copyright © 2016 Emre Berk. All rights reserved.
+*/
+
+
+CART = "Sepet";
+ADD_NEW_PRODUCT = "Yeni Ürün Ekle";
+BUY_NOW = "HEMEN AL";
+YES = "Evet";
+NO = "Hayır";
+CANCEL = "İptal";
+ARE_YOU_SURE = "Emin misiniz?";
+ORDER_SUCCESS = "Siparişinizi aldık!";
+PRODUCT_NOT_FOUND = "Ürün bulunamadı";
+SCANNING = "Taranıyor";
+CAMERA_PERMISSION_ERROR = "Barkodları tarayabilmemiz için kamera iznine ihtiyacımız var";
+ADDRESS = "Adres";
+FACEBOOK_PERMISSON_ERROR = "Giriş yapabilmek için lütfen onaylayın";
+CONNECT_WITH_FACEBOOK = "Facebook ile bağlan";
+LOCATION = "lokasyon";
+PUSH_NOTIFICATION = "bildirim";
+DESC_TEXT = "düzenli olarak aldığınız şeyleri öğrenir, her ay kapınıza getirir";
+DESC_TEXT2 = "daha hızlı ve basit ulaşabilmek için konumunuzu kullanır";
+DESC_TEXT3 = "bilgilendirir, siparişiniz yola çıkmadan önce onay alır";
+ADD_TO_CHART = "Sepete Ekle";
+DOOR_NO = "Kapı no";
+BUILDING_NO = "Apartman no";
+LANDMARK = "Adres tarifi";
+SAVE = "Kaydet";
+FILL_ALL_FIELD_ERROR = "Lütfen tüm alanları doldurun";
+GENERAL_ERROR = "Bir hata oluştu lütfen internet bağlantınızı kontrol ediniz";"An error occurred, please check your internet connection";

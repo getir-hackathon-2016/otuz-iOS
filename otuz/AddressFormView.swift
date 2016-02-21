@@ -36,7 +36,7 @@ class AddressFormView:UIView{
     
     func initAddressTextField(){
         addressTextField = FormTextField()
-        addressTextField.placeholder = "Adres"
+        addressTextField.placeholder = "ADDRESS".localized
         self.addSubview(addressTextField)
         addressTextField.snp_makeConstraints { (make) -> Void in
             make.left.equalTo(10)
@@ -48,7 +48,7 @@ class AddressFormView:UIView{
     
     func initDoorNumberTextField(){
         doorNumberTextField = FormTextField()
-        doorNumberTextField.placeholder = "Kapı no"
+        doorNumberTextField.placeholder = "DOOR_NO".localized
         self.addSubview(doorNumberTextField)
         doorNumberTextField.snp_makeConstraints { (make) -> Void in
             make.left.equalTo(addressTextField)
@@ -60,7 +60,7 @@ class AddressFormView:UIView{
     
     func initBuildingNumberTextField(){
         buildingNumberTextField = FormTextField()
-        buildingNumberTextField.placeholder = "Apartman no"
+        buildingNumberTextField.placeholder = "BUILDING_NO".localized
         self.addSubview(buildingNumberTextField)
         buildingNumberTextField.snp_makeConstraints { (make) -> Void in
             make.right.equalTo(addressTextField)
@@ -72,7 +72,7 @@ class AddressFormView:UIView{
     
     func initLandmarkTextField(){
         landmarkTextField = FormTextField()
-        landmarkTextField.placeholder = "Adres Tarifi"
+        landmarkTextField.placeholder = "LANDMARK".localized
         self.addSubview(landmarkTextField)
         landmarkTextField.snp_makeConstraints { (make) -> Void in
             make.right.equalTo(addressTextField)
@@ -84,7 +84,7 @@ class AddressFormView:UIView{
     
     func initDoneButton(){
         doneButton = UIButton(type: UIButtonType.System)
-        doneButton.setTitle("Kaydet", forState: UIControlState.Normal)
+        doneButton.setTitle("SAVE".localized, forState: UIControlState.Normal)
         doneButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         addSubview(doneButton)
         doneButton.snp_makeConstraints { (make) -> Void in

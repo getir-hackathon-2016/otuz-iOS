@@ -25,9 +25,9 @@ class ConnectViewController:UIViewController,UIScrollViewDelegate{
     }
     
     var data:[WalkthroughData] = [
-    WalkthroughData(titleText: "otuz", descriptionText: "düzenli olarak aldığınız şeyleri öğrenir, her ay kapınıza getirir"),
-    WalkthroughData(titleText: "lokasyon", descriptionText: "daha hızlı ve basit ulaşabilmek için konumunuzu kullanır"),
-    WalkthroughData(titleText: "bildirim", descriptionText: "bilgilendirir, siparişiniz yola çıkmadan önce onay alır")
+    WalkthroughData(titleText: "otuz", descriptionText: "DESC_TEXT".localized),
+    WalkthroughData(titleText: "LOCATION".localized, descriptionText: "DESC_TEXT2".localized),
+    WalkthroughData(titleText: "PUSH_NOTIFICATION".localized, descriptionText: "DESC_TEXT3".localized)
     ]
     
     override func viewDidLoad() {
@@ -61,7 +61,7 @@ class ConnectViewController:UIViewController,UIScrollViewDelegate{
         self.view.addSubview(facebookButton)
         self.facebookButton.backgroundColor = UIColor.whiteColor()
         self.facebookButton.titleLabel?.font = UIFont(latoBoldWithSize: 16)
-        self.facebookButton.setTitle("Facebook ile bağlan", forState: UIControlState.Normal)
+        self.facebookButton.setTitle("CONNECT_WITH_FACEBOOK".localized, forState: UIControlState.Normal)
         self.facebookButton.setTitleColor(UIColor(hexString: "3b5998"), forState: UIControlState.Normal)
         
         if let facebookImage = UIImage(named: "facebook"){
@@ -189,7 +189,7 @@ class ConnectViewController:UIViewController,UIScrollViewDelegate{
                 ErrorBanner.unknownErrorBanner().show()
                 return
             }else if result.isCancelled{
-                Banner(title: "Giriş yapabilmek için lütfen onaylayın", didTapBlock: nil).show()
+                Banner(title: "FACEBOOK_PERMISSON_ERROR".localized, didTapBlock: nil).show()
                 return
             } else{
                 if FBSDKAccessToken.currentAccessToken() != nil {

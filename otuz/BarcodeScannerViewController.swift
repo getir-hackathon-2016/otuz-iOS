@@ -26,8 +26,8 @@ class BarcodeScannerViewController:UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.scanningLabel.text = "Taranıyor"
-        self.dismissButton.setTitle("İptal", forState: UIControlState.Normal)
+        self.scanningLabel.text = "SCANNING".localized
+        self.dismissButton.setTitle("CANCEL".localized, forState: UIControlState.Normal)
         self.dismissButton.addTarget(self, action: "dismiss", forControlEvents: UIControlEvents.TouchUpInside)
     }
     
@@ -110,7 +110,7 @@ class BarcodeScannerViewController:UIViewController {
                 print("camera permission success")
                 self.startScanning()
             } else{
-                Banner(title: "We need your camera permission to scan barcodes.", didTapBlock: nil).show()
+                Banner(title: "CAMERA_PERMISSION_ERROR".localized, didTapBlock: nil).show()
             }
         }
     }

@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  otuz
+
+  Created by Emre Berk on 21/02/16.
+  Copyright © 2016 Emre Berk. All rights reserved.
+*/
+
+CART = "Cart";
+ADD_NEW_PRODUCT = "Add new product";
+BUY_NOW = "BUY NOW";
+YES = "Yes";
+NO = "No";
+CANCEL = "Cancel";
+ARE_YOU_SURE = "Are you sure?";
+ORDER_SUCCESS = "We got your order!";
+PRODUCT_NOT_FOUND = "Product not found";
+SCANNING = "Scanning";
+CAMERA_PERMISSION_ERROR = "We need your camera permission to scan barcodes.";
+ADDRESS = "Address";
+FACEBOOK_PERMISSON_ERROR = "Let us to server you.";
+CONNECT_WITH_FACEBOOK = "Connect with Facebook";
+LOCATION = "location";
+PUSH_NOTIFICATION = "notification";
+DESC_TEXT = "düzenli olarak aldığınız şeyleri öğrenir, her ay kapınıza getirir";
+DESC_TEXT2 = "daha hızlı ve basit ulaşabilmek için konumunuzu kullanır";
+DESC_TEXT3 = "bilgilendirir, siparişiniz yola çıkmadan önce onay alır";
+ADD_TO_CHART = "Add to cart";
+DOOR_NO = "Door no";
+BUILDING_NO = "Building no";
+LANDMARK = "Landmark";
+SAVE = "Save";
+FILL_ALL_FIELD_ERROR = "Please fill all fields";
+GENERAL_ERROR = "An error occurred, please check your internet connection";

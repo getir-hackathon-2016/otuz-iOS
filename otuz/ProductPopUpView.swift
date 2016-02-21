@@ -20,9 +20,6 @@ class ProductPopUpView:UIView {
     var productImageView:UIImageView!
     
     private var descriptionView:UIView!
-    
-    var nameLabel:UILabel!
-    var priceLabel:UILabel!
 
     var confirmButton:UIButton!
     var cancelButton:UIButton!
@@ -43,14 +40,12 @@ class ProductPopUpView:UIView {
         initProductImageView()
         initConfirmButton()
         initCancelButton()
-        initPriceLabel()
-        initNameLabel()
         initConstraints()
         self.cancelButton.titleLabel?.font = UIFont(latoBoldWithSize: 15)
-        self.cancelButton.setTitle("İptal", forState: UIControlState.Normal)
+        self.cancelButton.setTitle("CANCEL".localized, forState: UIControlState.Normal)
         self.cancelButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         self.confirmButton.titleLabel?.font = UIFont(latoBoldWithSize: 15)
-        self.confirmButton.setTitle("Sepete Ekle", forState: UIControlState.Normal)
+        self.confirmButton.setTitle("ADD_TO_CHART".localized, forState: UIControlState.Normal)
         self.confirmButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         blurView.snp_makeConstraints { (make) -> Void in
             make.size.equalTo(self)
@@ -87,14 +82,6 @@ class ProductPopUpView:UIView {
     }
     
     
-    func initNameLabel(){
-        self.nameLabel = UILabel()
-        self.nameLabel.textAlignment = .Center
-        self.nameLabel.font = UIFont(latoBoldWithSize: 20)
-        self.nameLabel.textColor = UIColor(hexString: "3b5998")
-        self.addSubview(nameLabel)
-    }
-    
     func initConfirmButton(){
         self.confirmButton = UIButton(type: UIButtonType.System)
         self.addSubview(confirmButton)
@@ -103,15 +90,6 @@ class ProductPopUpView:UIView {
     func initCancelButton(){
         self.cancelButton = UIButton(type: UIButtonType.System)
         self.addSubview(cancelButton)
-    }
-    
-    func initPriceLabel(){
-        self.priceLabel = UILabel()
-        self.priceLabel.textAlignment = .Center
-        self.priceLabel.font = UIFont(latoRegularWithSize: 15)
-        self.priceLabel.textColor = UIColor.whiteColor()
-        self.priceLabel.numberOfLines = 0
-        self.addSubview(priceLabel)
     }
     
     func initConstraints(){

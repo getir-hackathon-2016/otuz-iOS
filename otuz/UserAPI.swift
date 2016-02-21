@@ -102,7 +102,7 @@ class UserAPI{
         let params = NSMutableDictionary()
         params["address"] = address.toDictionary()
         params["facebookUserId"] = facebookId
-        
+
         API.call("POST", functionName: funcName, params: params) {
             (result) -> Void in
             

@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "otuz/CartViewController.swift"
-            timestampString = "477721448.788727"
+            timestampString = "477732845.920237"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "292"
-            endingLineNumber = "292"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
             landmarkName = "barcodeScanner(_:didRecognizedBarcode:)"
             landmarkType = "5">
             <Locations>
@@ -384,6 +384,182 @@
             startingLineNumber = "26"
             endingLineNumber = "26"
             landmarkName = "order(_:deliveryDate:completion:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "otuz/UserAPI.swift"
+            timestampString = "477733732.739881"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "updateAddress(_:facebookId:completion:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "otuz/ConnectViewController.swift"
+            timestampString = "477733803.57247"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "facebookConnectCall(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "otuz.ConnectViewController.facebookConnectCall (otuz.ConnectViewController)(otuz.FacebookUser) -&gt; ()"
+                  moduleName = "otuz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Emre/Dropbox/otuz/otuz/ConnectViewController.swift"
+                  timestampString = "477733803.607372"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "223"
+                  endingLineNumber = "223"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "otuz.ConnectViewController.(facebookConnectCall (otuz.ConnectViewController) -&gt; (otuz.FacebookUser) -&gt; ()).(closure #1)"
+                  moduleName = "otuz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Emre/Dropbox/otuz/otuz/ConnectViewController.swift"
+                  timestampString = "477733803.607598"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "225"
+                  endingLineNumber = "225"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "otuz/UserAPI.swift"
+            timestampString = "477733822.434146"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "facebookConnect(_:completion:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static otuz.UserAPI.facebookConnect (otuz.UserAPI.Type)(otuz.FacebookUser, completion : (result : otuz.APICallResult, user : Swift.Optional&lt;otuz.User&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "otuz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Emre/Dropbox/otuz/otuz/UserAPI.swift"
+                  timestampString = "477733822.456356"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "640">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static otuz.UserAPI.(facebookConnect (otuz.UserAPI.Type) -&gt; (otuz.FacebookUser, completion : (result : otuz.APICallResult, user : Swift.Optional&lt;otuz.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "otuz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Emre/Dropbox/otuz/otuz/UserAPI.swift"
+                  timestampString = "477733822.456757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "otuz/UserAPI.swift"
+            timestampString = "477733826.201715"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "facebookConnect(_:completion:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static otuz.UserAPI.facebookConnect (otuz.UserAPI.Type)(otuz.FacebookUser, completion : (result : otuz.APICallResult, user : Swift.Optional&lt;otuz.User&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "otuz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Emre/Dropbox/otuz/otuz/UserAPI.swift"
+                  timestampString = "477733826.20549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "640">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static otuz.UserAPI.(facebookConnect (otuz.UserAPI.Type) -&gt; (otuz.FacebookUser, completion : (result : otuz.APICallResult, user : Swift.Optional&lt;otuz.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "otuz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Emre/Dropbox/otuz/otuz/UserAPI.swift"
+                  timestampString = "477733826.206349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "otuz/UserAPI.swift"
+            timestampString = "477733842.712668"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "facebookConnect(_:completion:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

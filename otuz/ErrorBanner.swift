@@ -36,7 +36,7 @@ class ErrorBanner: NSObject {
         
         ErrorBanner.dismissActiveBanner()
         
-        let banner = Banner(title: "Please fill all fields", didTapBlock: nil)
+        let banner = Banner(title: "FILL_ALL_FIELD_ERROR".localized, didTapBlock: nil)
         
         activeBanner = banner
         
@@ -47,7 +47,7 @@ class ErrorBanner: NSObject {
         
         ErrorBanner.dismissActiveBanner()
         
-        let banner = Banner(title: "An error occurred, please check your internet connection", didTapBlock: nil)
+        let banner = Banner(title: "GENERAL_ERROR".localized, didTapBlock: nil)
         
         activeBanner = banner
         

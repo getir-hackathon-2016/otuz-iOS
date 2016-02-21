@@ -31,17 +31,17 @@ class CartViewController:UIViewController,BarcodeScannerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Sepet"
+        self.navigationItem.title = "CART".localized
         self.navigationController?.navigationBar.titleTextAttributes = NavigationHelper.titleAttributes()
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "location"), style: .Plain, target: self, action: "mapClicked")
         
         self.newProductButton.addTarget(self, action: "openBarcodeScanner", forControlEvents: UIControlEvents.TouchUpInside)
-        self.newProductButton.setTitle("Yeni Ürün Ekle", forState: UIControlState.Normal)
+        self.newProductButton.setTitle("ADD_NEW_PRODUCT".localized, forState: UIControlState.Normal)
         
         tableView.registerNib(UINib(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: "ProductCell")
         self.getProductsFromUser()
         
-        self.buyButton.setTitle("HEMEN AL", forState: UIControlState.Normal)
+        self.buyButton.setTitle("BUY_NOW".localized, forState: UIControlState.Normal)
         self.buyButton.addTarget(self, action: "buyButtonClicked", forControlEvents: .TouchUpInside)
         selectedDate = NSDate()
         updateDateButton(withDate: selectedDate!)
@@ -61,6 +61,15 @@ class CartViewController:UIViewController,BarcodeScannerDelegate{
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        
+        if let user = User.currentUser{
+            if user.address == nil {
+                self.openAddressViewController()
+            }
+        }else{
+            let connectViewController = ConnectViewController()
+            self.presentViewController(connectViewController, animated: true, completion: nil)
+        }
     }
     
     func initNewProductButton(){
@@ -139,17 +148,21 @@ class CartViewController:UIViewController,BarcodeScannerDelegate{
     }
     
     func mapClicked(){
+        openAddressViewController()
+    }
+    
+    func openAddressViewController(){
         let vc = AddressViewController()
         let nc = UINavigationController(rootViewController: vc)
         self.presentViewController(nc, animated: true, completion: nil)
     }
     
     func buyButtonClicked(){
-        let alert = UIAlertController(title: nil, message: "Emin misiniz?", preferredStyle: UIAlertControllerStyle.ActionSheet)
-        alert.addAction(UIAlertAction(title: "Evet", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
+        let alert = UIAlertController(title: nil, message: "ARE_YOU_SURE".localized, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        alert.addAction(UIAlertAction(title: "YES".localized, style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
             self.makePurchase()
         }))
-        alert.addAction(UIAlertAction(title: "İptal", style: .Cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "CANCEL".localized, style: .Cancel, handler: nil))
         
         self.presentViewController(alert, animated: true, completion: nil)
     }
@@ -161,8 +174,8 @@ class CartViewController:UIViewController,BarcodeScannerDelegate{
             (result) -> Void in
             otuzLoading.hide()
             if result.error == nil {
-                let alert = UIAlertController(title: nil, message: "Siparişinizi aldık!", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Tamam", style: .Default, handler: nil))
+                let alert = UIAlertController(title: nil, message: "ORDER_SUCCESS".localized, preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "YES".localized, style: .Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }else{
                 ErrorBanner.handleError(result.error!)
@@ -285,7 +298,7 @@ class CartViewController:UIViewController,BarcodeScannerDelegate{
                     self.foundedProduct = founded
                     self.openPopUpView(withProduct:founded)
                 }else{
-                    Banner(title: "Ürün bulunamadı", didTapBlock: nil).show()
+                    Banner(title: "PRODUCT_NOT_FOUND".localized, didTapBlock: nil).show()
                 }
             }else{
                 ErrorBanner.handleError(result.error!)

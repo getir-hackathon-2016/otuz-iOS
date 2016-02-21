@@ -52,6 +52,7 @@
 		C383E1BD1C78F1C10043C233 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1BC1C78F1C10043C233 /* FormTextField.swift */; };
 		C383E1BF1C792DEE0043C233 /* otuzLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1BE1C792DEE0043C233 /* otuzLoading.swift */; };
 		C383E1C11C79716C0043C233 /* OrderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383E1C01C79716C0043C233 /* OrderAPI.swift */; };
+		C383E1C51C79A6A50043C233 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C383E1C71C79A6A50043C233 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,10 @@
 		C383E1BC1C78F1C10043C233 /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		C383E1BE1C792DEE0043C233 /* otuzLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = otuzLoading.swift; sourceTree = "<group>"; };
 		C383E1C01C79716C0043C233 /* OrderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAPI.swift; sourceTree = "<group>"; };
+		C383E1C61C79A6A50043C233 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C383E1C91C79A82C0043C233 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		C383E1CA1C79A82D0043C233 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C383E1CB1C79A82D0043C233 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D183D3F4F4CC59E5D3AE3CFD /* Pods-otuz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otuz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-otuz/Pods-otuz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,9 +207,7 @@
 				C30E7EC21C77C1B7002A5588 /* Main.storyboard */,
 				C30E7EC51C77C1B7002A5588 /* Assets.xcassets */,
 				C30E7EC71C77C1B7002A5588 /* LaunchScreen.storyboard */,
-				C30E7ECA1C77C1B7002A5588 /* Info.plist */,
-				C30E7EF91C77E187002A5588 /* Data.plist */,
-				C30E7EEC1C77DB86002A5588 /* Fonts */,
+				C383E1C41C79A6890043C233 /* Supporting Files */,
 			);
 			path = otuz;
 			sourceTree = "<group>";
@@ -308,6 +311,17 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		C383E1C41C79A6890043C233 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C383E1C71C79A6A50043C233 /* Localizable.strings */,
+				C30E7ECA1C77C1B7002A5588 /* Info.plist */,
+				C30E7EF91C77E187002A5588 /* Data.plist */,
+				C30E7EEC1C77DB86002A5588 /* Fonts */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D6BCE7CEEF5023E20AD98E77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +419,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = C30E7EB21C77C1B6002A5588;
 			productRefGroup = C30E7EBC1C77C1B7002A5588 /* Products */;
@@ -427,6 +442,7 @@
 				C383E1B31C788FCD0043C233 /* ProductCell.xib in Resources */,
 				C30E7F021C77EC04002A5588 /* Lato-Bold.ttf in Resources */,
 				C30E7EFA1C77E187002A5588 /* Data.plist in Resources */,
+				C383E1C51C79A6A50043C233 /* Localizable.strings in Resources */,
 				C30E7F001C77EBFA002A5588 /* Lato-Regular.ttf in Resources */,
 				C30E7EC61C77C1B7002A5588 /* Assets.xcassets in Resources */,
 				C30E7EC41C77C1B7002A5588 /* Main.storyboard in Resources */,
@@ -576,6 +592,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C30E7EC31C77C1B7002A5588 /* Base */,
+				C383E1C91C79A82C0043C233 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -584,8 +601,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				C30E7EC81C77C1B7002A5588 /* Base */,
+				C383E1CA1C79A82D0043C233 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C383E1C71C79A6A50043C233 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C383E1C61C79A6A50043C233 /* en */,
+				C383E1CB1C79A82D0043C233 /* tr */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
